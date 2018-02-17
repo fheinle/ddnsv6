@@ -11,7 +11,7 @@ require_relative 'config'
 
 conf = Config.new
 
-log = Logger.new('ddnsv6.log', 'daily')
+log = Journald::Logger.new('ddnsv6')
 
 error RuntimeError do
   [409, JSON.dump(msg => "API error: #{env['sinatra.error'].message}")]
