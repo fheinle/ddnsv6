@@ -1,0 +1,12 @@
+domains:
+    - domainA.invalid
+    - domainB.invalid
+basedir: '/var/lib/ddnsv6'
+server: 'server hostname here'
+port: 4444
+ssl: true
+cloudflare_email: YOUR EMAIL HERE
+cloudflare_key: # API KEY HERE
+whitelist:
+    - sample1.domainA.invalid
+    - sample2.domainB.invalid

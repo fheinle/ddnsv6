@@ -29,6 +29,7 @@ else
   ddns_port   = 4567
 end
 http = Net::HTTP.new(ddns_server, ddns_port)
+http.use_ssl = true if conf.config['ssl']
 req = Net::HTTP::Post.new('/heartbeat')
 req.body = JSON.dump(
   'hostname' => hostname,
