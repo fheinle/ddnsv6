@@ -7,6 +7,3 @@ port: 4444
 ssl: true
 cloudflare_email: YOUR EMAIL HERE
 cloudflare_key: # API KEY HERE
-whitelist:
-    - sample1.domainA.invalid
-    - sample2.domainB.invalid
