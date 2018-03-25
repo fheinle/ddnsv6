@@ -7,3 +7,6 @@ port: 4444
 ssl: true
 cloudflare_email: YOUR EMAIL HERE
 cloudflare_key: # API KEY HERE
+username: ddns
+password: invalid
+prefix: '2001'
